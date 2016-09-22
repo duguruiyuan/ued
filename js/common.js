@@ -25,8 +25,10 @@ $(function() {
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop > 0) {
 			$(".g-header").addClass("header-scroll");
+			$(".to-top").stop(true,true).fadeIn();
 		} else {
 			$(".g-header").removeClass("header-scroll");
+			$(".to-top").stop(true,true).fadeOut()
 		}
 		
 		if(scrollTop > outerHeight && scrollTop > scrollValue) {
@@ -37,9 +39,7 @@ $(function() {
 		scrollValue = scrollTop;
 	}
 	
-	/**
-	 * 图片列表特效
-	 */
+	 //图片列表特效
 	$(window).on("load scroll",function(){
 		var scrollTop = $(window).scrollTop();
 		var WinH = $(window).height();
@@ -49,7 +49,7 @@ $(function() {
 			} else {
 				$(this).removeClass("view");
 			}
-		})
+		});
 	})
 	
 		// 判断是否已经点赞
