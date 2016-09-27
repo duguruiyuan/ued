@@ -13,7 +13,7 @@ a:focus {
 	text-align: center;
 	font-size: 26px;
 	color: #333;
-	padding-top: 30px;
+	padding-top: 60px;
 }
 .fl{
 	float: left;
@@ -70,7 +70,7 @@ body{
 	width: 100%;
 	min-width: 1180px;
 	height: 36px;
-	padding: 19px 0;
+	padding: 30px 0;
 	background-color: transparent;
 	opacity: .98;
 	-webkit-transition: all .4s;
@@ -90,9 +90,9 @@ body{
 .header-scroll .logo{height:21px;width:130px;background-position:0 -48px;margin-top:7px;}
 .header-menu li{
 	display: inline-block;
-	/*padding: 0 35px;*/
-	width: 100px;
-	text-align: center;
+	margin-left: 70px;
+}
+.header-menu li a{
 	color: #fff;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
@@ -102,6 +102,7 @@ body{
 		vertical-align: middle;
 		display: inline-block;
 		float: none;
+		margin-top: 3px;
 	}
 	.g-footer .to-top{
 		right: 0!important;
@@ -114,12 +115,14 @@ body{
 	padding: 7px 0;
 }
 .header-scroll li{
+	margin-top: 3px;
+}
+.header-scroll li a{
 	color: #333;
 	font-size: 14px;
-	margin-top: 7px;
 }
 
-.header-menu li:hover,.header-menu .active{
+.header-menu a:hover,.header-menu .active{
 	color: #14c6d0;
 }
 .slider-box,.slide-list{
@@ -155,7 +158,7 @@ body{
 	background-clip: content-box;
 	width: 50px;
 	height: 2px;
-	padding: 10px!important;
+	padding: 10px 5px!important;
 	background-color: rgba(255,255,255,.3);
 	-webkit-transition: all 0.8s ease-out;
 	transition: all 0.8s ease-out;
@@ -222,12 +225,15 @@ body{
 	font-size: 18px;
 	color: #333;
 	margin-top: 50px;
-	
+	text-align-last: left;
+	text-align: left;
 }
 .field-box dd{
 	font-size: 12px;
 	color: #adb2b7;
 	text-indent: 0;
+	text-align-last: left;
+	text-align: left;
 }
 .green-line-box{
 	text-align: center;
@@ -250,7 +256,7 @@ body{
 	overflow: hidden;
 }
 .case-list{
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .case{
@@ -433,8 +439,8 @@ body{
 	box-sizing: border-box;
 	padding-top: 20px;
 	outline: none;
-	-webkit-transition: all 0.2s;
-	transition: all 0.2s;
+	-webkit-transition: padding-top 0.2s;
+	transition: padding-top 0.2s;
 }
 .to-top .iconfont{
 	font-weight: normal;
@@ -461,29 +467,26 @@ body{
 .copyright{
 	color: #464646;
 }
-.footer-logos{background:url(../img/footer-logos.png) no-repeat ;display: inline-block;margin-left: 45px;margin-bottom: 30px;vertical-align: middle;width: 90px;}
-.logo5{height:24px;background-position:24px 0;}
-.logo2{height:25px;background-position:22px -36px;}
-.logo3{height:13px;background-position:0 -76px;}
-.logo6{height:13px;background-position:0 -101px;}
-.logo4{height:16px;background-position:0 -130px;}
-.logo1{height:23px;background-position:0 -164px;}
+.footer-logos{background:url(../img/footer-logos.png) no-repeat ;display: inline-block;margin-left: 45px;margin-bottom: 30px;}
+.logo5{width: 90px;height:24px;background-position:24px 0;}
+.logo2{width: 90px;height:25px;background-position:22px -36px;}
+.logo3{width: 60px;height:18px;background-position:0 -73px;}
+.logo6{width: 60px;height:13px;background-position:0 -101px;}
+.logo4{width: 90px;height:16px;background-position:0 -130px;}
+.logo1{width: 90px;height:25px;background-position:0 -164px;}
 .logo5:hover{height:24px;background-position:24px -196px;}
 .logo2:hover{height:25px;background-position:22px -228px;}
-.logo3:hover{height:13px;background-position:0 -265px;}
+.logo3:hover{height:18px;background-position:0 -262px;}
 .logo6:hover{height:13px;background-position:0 -295px;}
 .logo4:hover{height:16px;background-position:0 -323px;}
-.logo1:hover{height:23px;background-position:0 -352px;}
+.logo1:hover{height:25px;background-position:0 -352px;}
 
 .friend-link-title{
 	font-size: 16px;
 	color: #646464;
 }
 .friend-link-list{
-	width: 420px;
-}
-.friend-link-list li{
-	width: 90px;
+	width: 385px;
 }
 #show-weixin{
 	position: relative;
@@ -521,6 +524,9 @@ body{
 	border-top-color: #8c8e91;
 	border-top-color: rgba(255,255,255,.5);
 }
+#show-weixin .iconfont{
+	display: inline-block;
+}
 .wx-box img{
 	width: 100px;
 	max-width: initial;
@@ -530,14 +536,15 @@ body{
  * ==========case page===================
  */
 .page-top{
-	height: 74px;
+	height: 96px;
 	margin-bottom: 30px;
 }
 .header-color-fixed{
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.96);
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.header-color-fixed li{
+.header-color-fixed li a{
 	color: #333;
 }
 .case-page-box{
@@ -584,7 +591,7 @@ body{
 }
 .case-sub-title{
 	color: #a9b0b4;
-	line-height: 35px;
+	line-height: 20px;
 }
 /**
  * ==========case detail============
@@ -699,7 +706,6 @@ body{
 .service-banner-box{
 	height: 850px;
 	margin: auto;
-	margin-bottom: 30px;
 	max-width: 1920px;
 	background: url(../img/service/service-banner.png) center no-repeat #646464;	
 }
@@ -720,7 +726,7 @@ body{
 }
 .service-banner-list h3{
 	line-height: 30px;
-	font-size: 18px;
+	font-size: 16px;
 	margin-top: 30px;
 }
 .service-banner-list p{
@@ -768,15 +774,15 @@ body{
 	border:solid transparent;
 	border-width: 5px 2.5px;
 	cursor: pointer;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: all 0.3s 0.1s ease-in-out;
+	transition: all 0.3s 0.1s ease-in-out;
 }
 .service-banner-nav .active{
 	background-color: #fff;
 }
 @-webkit-keyframes service-banner-ani{
 	from{
-		-webkit-transform: translate3d(0, 50px, 0);
+		-webkit-transform: translate3d(0, 30px, 0);
 		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 		opacity: 0;
 		}
@@ -787,7 +793,7 @@ body{
 		}
 }
 @keyframes service-banner-ani{
-	from{transform: translate3d(0, 50px, 0);filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity: 0;}
+	from{transform: translate3d(0, 30px, 0);filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity: 0;}
 	to{transform: translate3d(0, 0, 0);filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity: 1;}
 }
 .main-sub-title{
@@ -796,9 +802,14 @@ body{
 	text-align: center;
 	line-height: 30px;
 }
+.service-progress-box{
+	max-width: 1920px;
+	margin: auto;
+	background: url(../img/service-progress-box-bg.png) center no-repeat;
+}
 .service-progress-list{
 	margin-top: 70px;
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 }
 .service-progress-list li{
 	float: left;
@@ -1027,7 +1038,7 @@ a:hover .s-company{
 }
 .timing-list li{
 	float: left;
-	font-size: 70px;
+	font-size: 80px;
 	font-family: arial;
 	width: 130px;
 	height: 150px;
@@ -1063,6 +1074,8 @@ a:hover .s-company{
 	display: inline-block;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
+	font-size: 12px;
+	vertical-align: 2px;
 }
 .join-link:hover i,.more-case:hover .iconfont{
 	-webkit-transform: translateX(3px);
@@ -1098,8 +1111,9 @@ a:hover .s-company{
 }
 .about-member-name{
 	position: absolute;
-	bottom: -30px;
-	right: -40px;
+	bottom: -6px;
+	left: 170px;
+	width: 120px;
 	line-height: 30px;
 	opacity: 0;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);

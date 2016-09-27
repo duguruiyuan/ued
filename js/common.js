@@ -25,9 +25,18 @@ $(function() {
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop > 0) {
 			$(".g-header").addClass("header-scroll");
-			$(".to-top").stop(true,true).fadeIn();
+//			$(".to-top").stop(true,true).fadeIn();
+			$("#logo").stop().animate({'width':'90px','margin-top':'7px'},500,'linear');
 		} else {
 			$(".g-header").removeClass("header-scroll");
+			$("#logo").stop().animate({'width':'130px','margin-top':'0'},500,'linear');
+//			$(".to-top").stop(true,true).fadeOut()
+		}
+		
+		//滚动到底部时才显示回到顶部按钮
+		if(scrollTop+$(window).height()==$('body').height()){
+			$(".to-top").stop(true,true).fadeIn();
+		}else{
 			$(".to-top").stop(true,true).fadeOut()
 		}
 		
@@ -38,6 +47,14 @@ $(function() {
 		}
 		scrollValue = scrollTop;
 	}
+	
+	//脚部微信图标效果
+	
+	$("#show-weixin .iconfont").mouseover(function(){
+		$(this).addClass('animated rubberBand').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			$(this).removeClass('animated rubberBand')
+		});
+	})
 	
 	 //图片列表特效
 	$(window).on("load scroll",function(){

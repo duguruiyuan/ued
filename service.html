@@ -26,21 +26,14 @@
 		<div class="g-header">
 			<div class="main clearfix">
 				<a href="index.html">
-					<div class="logo-bg logo"></div>
+					<!--<div class="logo-bg logo"></div>-->
+					<img src="img/LOGO.png" alt="logo" id="logo"/>
 				</a>
 				<ul class="fr header-menu">
-					<a href="cases.html">
-						<li>案例</li>
-					</a>
-					<a href="service.html">
-						<li>服务</li>
-					</a>
-					<a href="about.html">
-						<li>关于</li>
-					</a>
-					<a href="activity.html">
-						<li>动态</li>
-					</a>
+					<li><a href="cases.html">案例</a></li>
+					<li><a href="service.html">服务</a></li>
+					<li><a href="about.html">关于</a></li>
+					<li><a href="activity.html">动态</a></li>
 				</ul>
 			</div>
 		</div>
@@ -74,6 +67,7 @@
 				</div>
 
 			</div>
+			<div class="service-progress-box">
 			<div class="main">
 				<h2 class="main-title">服务流程</h2>
 				<p class="main-sub-title">我们用有效且敏捷的服务流程为你提供服务</p>
@@ -151,6 +145,7 @@
 						</div>
 					</li>
 				</ul>
+			</div>
 			</div>
 			<div class="s-focus"></div>
 			<div class="main ">
@@ -373,18 +368,21 @@
 				<div class="fl">
 					<ul class="footer-link-list">
 						<a href="index.html">
-							<li style="border-right: none;">
+							<li style="border-right: none;padding: 0;">
 								<img src="img/footer-logo.png" />
 							</li>
 						</a>
-						<a href="">
+						<a href="cases.html">
 							<li style="border-left: 1px solid #323232;margin-left: 20px;">案例</li>
 						</a>
-						<a href="">
+						<a href="service.html">
 							<li>服务</li>
 						</a>
-						<a href="">
+						<a href="about.html">
 							<li>关于</li>
+						</a>
+						<a href="activity.html">
+							<li>动态</li>
 						</a>
 						<a href="javascript:;" id="show-weixin">
 							<li><span class="iconfont">&#xe60a;</span></li>
@@ -395,7 +393,7 @@
 					</ul>
 					<p class="copyright">All rights reserved. 浙ICP备00000000号-1 融都科技 版权所有</p>
 				</div>
-				<div class="fr clearfix">
+				<div class="fr clearfix" style="margin-top:10px;">
 					<span class="friend-link-title">友情链接</span>
 					<ul class="friend-link-list fr">
 						<a href="http://erongdu.com" target="_blank" title="融都科技">
@@ -444,10 +442,10 @@
 				layer.open({
 					type: 0,
 					title: false,
-					area: ['980px', '640px'],
+					area: ['980px', '620px'],
 					closeBtn: 1,
 					btn: false,
-					shade: [0.6, '#000'],
+					shade: [0.98, '#000'],
 					content: $("#contat-form-box").html(),
 					success: function(currentLayer) {
 						//body禁止滚动,使弹窗固定
