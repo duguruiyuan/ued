@@ -50,8 +50,8 @@ $(function() {
 	
 	//脚部微信图标效果
 	
-	$("#show-weixin .iconfont").mouseover(function(){
-		$(this).addClass('animated rubberBand').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	$("#show-weixin").mouseover(function(){
+		$(this).find('.iconfont').addClass('animated rubberBand').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 			$(this).removeClass('animated rubberBand')
 		});
 	})
@@ -109,7 +109,10 @@ $(function() {
 			if(idsStr) {
 				ids = idsStr.split(",");
 				if(ids.indexOf(postID.toString()) !== -1) {
-					layer.msg('你已经赞过了', {icon: 6}); 
+					layer.msg('',{
+						skin: 'layer-green',//自定义layer Ui
+						content:'<i class="iconfont" style="margin-right:5px;font-size:20px;">&#xe60d;</i> 你已经赞过了',
+					});
 					return false;
 				}
 				if(ids.length > 500) {
