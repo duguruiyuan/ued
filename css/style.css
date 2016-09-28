@@ -960,6 +960,49 @@ a:hover .s-company{
 	margin: auto;
 	background: url(../img/about/about-banner.jpg) center no-repeat;
 }
+.about-banner h1{
+	font-size: 60px;
+	line-height: 35px;
+	color: #c5c5c5;
+	font-weight: 100;
+	text-align: center;
+	padding-top: 215px;
+}
+.about-banner p{
+	font-size: 16px;
+	line-height: 72px;
+	color: #c5c5c5;
+	text-align: center;
+}
+.about-banner .about-banner-nums{
+	width: 610px;
+	margin: 65px auto 0;
+}
+.about-banner-nums dl{
+	display: inline-block;
+	text-align: center;
+	text-align-last: center;
+}
+.about-banner-nums dt{
+	color: #14C6D0;
+	font-size: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-align-last: center;
+	position: relative;
+}
+.about-banner-nums sup{
+	position: relative;
+	font-size: 30px;
+	top: -25px;
+	right: 15px;
+	font-family: arial;
+}
+.about-banner-nums dd{
+	font-size: 14px;
+	color: #787878;
+	padding-right: 10px;
+}
 .about-events-box{
 	margin-top: -130px;
 	margin-bottom: 70px;
