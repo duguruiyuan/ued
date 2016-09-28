@@ -130,9 +130,12 @@
 				</ul>
 				<div class="about-insprition"></div>
 			</div>
-			<div class="timing-bg">
+			<div class="timing-bg" data-type="parallaxScroll" data-speed="25" data-bgheight="640">
 				<div class="main">
-					<ul class="timing-list clearfix">
+					<h2>来吧，让我们相伴同行</h2>
+					<p>从开始   • 到现在</p>
+					<div class="ticking-clock-box">						
+					<ul class="timing-list clearfix justify">
 						<li id="timing-month">61</li>
 						<li id="timing-day">07</li>
 						<li id="timing-hour">35</li>
@@ -140,10 +143,10 @@
 						<li id="timing-sec">49</li>
 						<div class="timing-layer"></div>
 					</ul>
+					</div>
 					<a href="join.html" class="join-link">加入我们 <i class="iconfont">&#xe601;</i></a>
 				</div>
 			</div>
-			
 			<div class="main about-member-box">
 				<ul class="about-member-list clearfix">
 					<li>
@@ -356,7 +359,7 @@
 					area: ['980px', '620px'],
 					closeBtn:1,
 					btn:false,
-					shade: [0.98, '#000'],
+					shade: [0.6, '#000'],
 					content: $("#contat-form-box").html(),
 					success: function(currentLayer) {
 						//body禁止滚动,使弹窗固定

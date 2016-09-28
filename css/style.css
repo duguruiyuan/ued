@@ -54,6 +54,7 @@ body{
 }
                     
                     
+                    
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;
@@ -1029,16 +1030,36 @@ a:hover .s-company{
 	max-width: 1920px;
 	height: 600px;
 	margin: auto;
-	background: url(../img/about/timing-bg.jpg) center no-repeat;
-	
+	background: url(../img/about/timing-bg.jpg) no-repeat,url(../img/about/timing-bg.jpg) no-repeat;
+	background-size:cover;
+	text-align: center;
+}
+.timing-bg h2{
+	font-size: 40px;
+	color: #c5c5c5;
+	line-height: 36px;
+	font-weight: 100;
+	padding-top: 100px;
+	padding-bottom: 10px;
+}
+.timing-bg p{
+	font-size: 16px;
+	color: #c5c5c5;
+	line-height: 36px;
+}
+.ticking-clock-box{
+	width: 694px;
+	height: 270px;
+	background: url(../img/about/ticking-clock.png) center no-repeat;
+	margin: 30px auto 0;
 }
 .timing-list{
-	margin-left: 233px;
-	width: 710px;
 	position: relative;
 }
 .timing-list li{
-	float: left;
+	display: inline-block;
+	text-align: center;
+	text-align-last: center;
 	font-size: 80px;
 	font-family: arial;
 	width: 130px;
@@ -1046,8 +1067,6 @@ a:hover .s-company{
 	line-height: 150px;
 	font-weight: bold;
 	color: #fff;
-	margin:210px 6px 0;
-	text-align: center;
     background: -webkit-linear-gradient(top,#fff 50%,rgba(107,114,123,0.9) 50%);
     background: linear-gradient(top,#fff 50%,rgba(107,114,123,0.9) 50%);
     -webkit-background-clip: text;
@@ -1057,18 +1076,16 @@ a:hover .s-company{
 }
 .timing-layer{
 	position: absolute;
-	padding-left: 233px;
 	height: 2px;
 	left: 0;
 	right: 0;
-	top: 286px;
+	top: 76px;
 	background: url(../img/about/timing-bg.jpg) center/100% 2px no-repeat;
 }
 .join-link{
 	display: block;
 	text-align: center;
 	font-size: 16px;
-	margin-top: 100px;
 	color: #14C6D0;
 }
 .join-link i{
@@ -1456,8 +1473,8 @@ a:hover .s-company{
 	left:0;
 	color: #fff;
 	background:#14C6D0 ;
-	background: -webkit-linear-gradient(90deg,transparent 110px,rgba(0,0,0,0.1) 110px,rgba(0,0,0,0.1) 0) no-repeat,-webkit-linear-gradient(135deg,#1ed6c3 0%,#1ebbd5 100%) no-repeat;
-	background: linear-gradient(0deg,transparent 110px,rgba(0,0,0,0.1) 110px,rgba(0,0,0,0.1) 0) no-repeat,linear-gradient(-45deg,#1ed6c3 0%,#1ebbd5 100%) no-repeat;
+	background: -webkit-linear-gradient(90deg,transparent 110px,rgba(0,0,0,0.1) 110px,rgba(0,0,0,0.1) 0) no-repeat,-webkit-linear-gradient(135deg,rgba(30,214,195,0.98) 0%,rgba(30,187,213,0.98) 100%) no-repeat;
+	background: linear-gradient(0deg,transparent 110px,rgba(0,0,0,0.1) 110px,rgba(0,0,0,0.1) 0) no-repeat,linear-gradient(-45deg,rgba(30,214,195,0.98) 0%,rgba(30,187,213,0.98) 100%) no-repeat;
 }
 .modal-main{
 	padding: 30px 50px;

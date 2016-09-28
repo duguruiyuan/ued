@@ -69,6 +69,45 @@ $(function() {
 		});
 	})
 	
+	//
+	var initParallaxScroll = function() {
+		$(document).ready(function() {
+			$window = $(window);
+			$('[data-type="parallaxScroll"]').each(function() {
+				var e = $(this), i = e.offset(), n = i.top, a = e.outerHeight(), o = e.data("bgheight"), r;
+				if (o) {
+					r = o > a ? o - a : 0
+				}
+				$(window).scroll(function() {
+//					if (t)
+//						return false;
+					if ($window.scrollTop() + $window.height() > n + a / 2 && n + a > $window.scrollTop()) {
+						var i = -(($window.scrollTop() + $window.height() - n) / e.data("speed"))
+						  , o = i;
+						if (r >= 0) {
+							o = Math.abs(i) < r ? i : -r
+						}
+						var s = "50% " + o + "px";
+						e.css({
+							backgroundPosition: s+',center',
+							transition: "background-position 0.3s linear"
+						})
+					}
+				})
+			});
+//			var e = $("#mod-wrap-free");
+//			$window.on("resize", function() {
+//				var t = $window.width();
+//				if (t > 1920 || t <= 768) {
+//					e.css("background-size", "cover")
+//				} else {
+//					e.css("background-size", "1920px 650px")
+//				}
+//			})
+		})
+	}
+	
+	initParallaxScroll();
 		// 判断是否已经点赞
 	$(".btn-like").each(function(){
 		var $this = $(this);
