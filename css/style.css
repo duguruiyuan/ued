@@ -1111,6 +1111,12 @@ a:hover .s-company{
 .timing-list{
 	position: relative;
 }
+.timing-list:after{
+	content: " ";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
 .timing-list li{
 	display: inline-block;
 	text-align: center;
