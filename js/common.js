@@ -26,10 +26,10 @@ $(function() {
 		if(scrollTop > 0) {
 			$(".g-header").addClass("header-scroll");
 //			$(".to-top").stop(true,true).fadeIn();
-			$("#logo").stop().animate({'width':'90px','margin-top':'7px'},500,'linear');
+//			$("#logo").stop().animate({'width':'90px','margin-top':'7px'},500,'linear');
 		} else {
 			$(".g-header").removeClass("header-scroll");
-			$("#logo").stop().animate({'width':'130px','margin-top':'0'},500,'linear');
+//			$("#logo").stop().animate({'width':'130px','margin-top':'0'},500,'linear');
 //			$(".to-top").stop(true,true).fadeOut()
 		}
 		

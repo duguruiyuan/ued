@@ -71,8 +71,9 @@ body{
 	z-index: 3000;
 	width: 100%;
 	min-width: 1180px;
-	height: 36px;
-	padding: 30px 0;
+	height: 60px;
+	line-height: 60px;
+	box-sizing: border-box;
 	background-color: transparent;
 	opacity: .98;
 	-webkit-transition: all .4s;
@@ -85,10 +86,14 @@ body{
 	margin-top: -76px;
 }
 .header-menu{
-	font-size: 16px;	
+	font-size: 14px;	
 }
 .logo-bg{background:url(../img/logo-bg.png) no-repeat ;display: inline-block;vertical-align:middle;-webkit-transition: all 0.5s;transition: all 0.5s;}
 .logo{height:30px;width:130px;background-position:0 0;}
+#logo{
+	width: 90px;
+	margin-top: 18px;
+}
 .header-scroll .logo{height:21px;width:130px;background-position:0 -48px;margin-top:7px;}
 .header-menu li{
 	display: inline-block;
@@ -114,10 +119,6 @@ body{
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.96);
 	box-shadow: 0 1px 5px rgba(0,0,0,.1);
-	padding: 7px 0;
-}
-.header-scroll li{
-	margin-top: 3px;
 }
 .header-scroll li a{
 	color: #333;
@@ -543,7 +544,7 @@ a:nth-of-type(3n+3) .img-ani{
  * ==========case page===================
  */
 .page-top{
-	height: 96px;
+	height: 60px;
 	margin-bottom: 30px;
 }
 .header-color-fixed{
@@ -1407,6 +1408,7 @@ a:hover .s-company{
 .activity-menu{
 	text-align: center;
 	padding-top: 10px;
+	margin-bottom: 15px;
 }
 .activity-menu li{
 	display: inline-block;
