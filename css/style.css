@@ -51,10 +51,7 @@ body{
   url('//at.alicdn.com/t/font_1474970540_1562958.woff') format('woff'), /* chrome、firefox */
   url('//at.alicdn.com/t/font_1474970540_1562958.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url('//at.alicdn.com/t/font_1474970540_1562958.svg#iconfont') format('svg'); /* iOS 4.1- */
-}
-                    
-                    
-                    
+}                                    
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;
@@ -62,7 +59,10 @@ body{
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
-}                    
+}
+
+@font-face {font-family: 'SiYuan-ExtraLig648e3bdfc169e4';src: url('../fonts/siyuan/57f8c330f629da0c084594b1.gif');src: url('../fonts/siyuan/57f8c330f629da0c084594b1.gif?#iefix') format('embedded-opentype'),     url('../fonts/siyuan/57f8c330f629da0c084594b1.bmp') format('woff'),     url('../fonts/siyuan/57f8c330f629da0c084594b1.jpg') format('truetype'),     url('../fonts/siyuan/57f8c330f629da0c084594b1.png#SiYuan-ExtraLight') format('svg');   }.css648e3bdfc169e4{font-family: 'SiYuan-ExtraLig648e3bdfc169e4';}
+                    
 /*==================home===================*/
 .g-header{
 	position: fixed;
@@ -720,6 +720,17 @@ a:nth-of-type(3n+3) .img-ani{
 	position: relative;
 	height: 850px;
 }
+.service-banner-box h1{
+	padding-top: 200px;
+	text-align: center;
+	color: #fff;
+	font-size: 70px;
+}
+.service-banner-box p{
+	text-align: center;
+	color: #c5c5c5;
+	font-size: 16px;
+}
 .service-banner-list{
 	position: absolute;
 	bottom: 90px;
@@ -920,6 +931,17 @@ a:nth-of-type(3n+3) .img-ani{
 	background: url(../img/service/service-focus.png) center no-repeat;
 	margin: auto;
 }
+.s-focus h3{
+	color: #fff;
+	font-size: 26px;
+	padding-top: 115px;
+	padding-left: 150px;
+}
+.s-focus p{
+	color: #ccc;
+	font-size: 16px;
+	padding-left: 150px;
+}
 .s-company-list{
 	margin: 60px 0 0;
 	padding: 30px 0;
@@ -968,10 +990,11 @@ a:hover .s-company{
 .about-banner h1{
 	font-size: 60px;
 	line-height: 35px;
-	color: #c5c5c5;
+	color: #fff;
 	font-weight: 100;
 	text-align: center;
 	padding-top: 215px;
+	-webkit-font-smoothing: antialiased;
 }
 .about-banner p{
 	font-size: 16px;
@@ -1091,7 +1114,7 @@ a:hover .s-company{
 }
 .timing-bg h2{
 	font-size: 40px;
-	color: #c5c5c5;
+	color: #fff;
 	line-height: 36px;
 	font-weight: 100;
 	padding-top: 100px;
