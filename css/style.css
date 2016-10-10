@@ -54,7 +54,7 @@ body{
 }                                    
 .iconfont {
   font-family:"iconfont" !important;
-  font-size:16px;
+  font-size:14px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
@@ -227,7 +227,7 @@ body{
 .field-box dt{
 	font-size: 18px;
 	color: #333;
-	margin-top: 50px;
+	margin-top: 40px;
 	text-align-last: left;
 	text-align: left;
 	-moz-text-align-last: left;
@@ -433,6 +433,7 @@ a:nth-of-type(3n+3) .img-ani{
 	padding: 60px 0;
 }
 .g-footer .to-top{
+	display: none;
 	position: fixed;
 	width: 70px;
 	height: 70px;
@@ -666,6 +667,8 @@ a:nth-of-type(3n+3) .img-ani{
 .related-case-list li{
 	color: #666;
 	line-height: 32px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .related-case-list li:hover{
 	color: #14C6D0;
@@ -1038,6 +1041,7 @@ a:hover .s-company{
 	font-size: 14px;
 	color: #787878;
 	padding-right: 10px;
+	text-indent: -17px;
 }
 .about-events-box{
 	margin-top: -130px;
@@ -1146,7 +1150,7 @@ a:hover .s-company{
 	text-align: center;
 	text-align-last: center;
 	-moz-text-align-last: center;
-	font-size: 80px;
+	font-size: 90px;
 	font-family: arial;
 	width: 130px;
 	height: 150px;
@@ -1293,7 +1297,6 @@ a:hover .s-company{
 	vertical-align: middle;
 	width: 130px;
 	height: 40px;
-	margin-right: 50px;
 	font-size: 16px;
 	line-height: 40px;
 	text-align: center;
@@ -1332,7 +1335,8 @@ a:hover .s-company{
 .contact-form-input{
 	width: 330px;
 	height: 40px;
-	padding: 12px 20px;
+	line-height: 40px;
+	padding: 0 20px;
 }
 
 .contact-form-texteara{
@@ -1407,15 +1411,15 @@ a:hover .s-company{
 }
 .activity-menu{
 	text-align: center;
-	padding-top: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 .activity-menu li{
 	display: inline-block;
+	box-sizing: border-box;
 	width: 180px;
-	height: 36px;
+	height: 44px;
 	text-align: center;
-	line-height: 36px;
+	line-height: 44px;
 	color: #14C6D0;
 	font-size: 16px;
 	border: 2px solid #14C6D0;
@@ -1551,7 +1555,7 @@ a:hover .s-company{
 }
 .job-list li:after{
 	content: "加入我们";
-	display: none;
+	opacity: 0;
 	font-size: 18px;
 	line-height: 22px;
 	color: #14C6D0;
@@ -1568,15 +1572,27 @@ a:hover .s-company{
 .job-1{background-position:0 -208px;}
 .job-3{background-position:0 -418px;}
 .job-2{background-position:0 -630px;}
-.job-list li:hover{
+.job-list li:before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	background: url(../img/job-hover.png) no-repeat ;
 	background-position: 3px 3px;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.job-list li:hover:before{
+	opacity: 1;
 }
 .job-list li:hover p{
 	display: none;
 }
 .job-list li:hover:after{
-	display: block;
+	opacity: 1;
 }
 .join-modal{
 	display: none;
@@ -1626,10 +1642,15 @@ a:hover .s-company{
 	color: #fff;
 	font-size: 18px;
 	border-radius: 3px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .deliver-btn:hover{
 	color: #14C6D0;
 	background-color: #fff;
+}
+.job-detail{
+	padding: 0 30px;
 }
 .job-detail dl{
 	float: left;
@@ -1655,5 +1676,11 @@ a:hover .s-company{
 	border: 2px solid #19c7d1!important;
 	border-radius: 7px!important;
 	color: #19c7d1;
+
+}
+.layer-green.layui-layer-dialog .layui-layer-content{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
 }
 
