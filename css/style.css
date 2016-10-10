@@ -78,7 +78,9 @@ body{
 	opacity: .98;
 	-webkit-transition: all .4s;
 	transition: all .4s;
+	overflow: hidden;
 }
+
 .header-show{
 	margin-top: 0;
 }
@@ -95,15 +97,7 @@ body{
 	margin-top: 18px;
 }
 .header-scroll .logo{height:21px;width:130px;background-position:0 -48px;margin-top:7px;}
-.header-menu li{
-	display: inline-block;
-	margin-left: 70px;
-}
-.header-menu li a{
-	color: #fff;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-}
+
 @media only screen and (min-width: 100px) and (max-width: 1180px) {
 	.header-menu{
 		vertical-align: middle;
@@ -115,18 +109,43 @@ body{
 		right: 0!important;
 	}
 }
+.header-menu li{
+	display: inline-block;
+	margin-left: 70px;
+	position: relative;
+}
+.header-menu li .act{
+	color: #fff;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.hov{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	color: #fff;
+	overflow: hidden;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
 .header-scroll{
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.96);
 	box-shadow: 0 1px 5px rgba(0,0,0,.1);
 }
-.header-scroll li a{
+.header-scroll li .hov{
 	color: #333;
-	font-size: 14px;
 }
 
-.header-menu a:hover,.header-menu .active{
+
+.header-menu a:hover .act,.header-menu .active .act{
 	color: #14c6d0;
+}
+.header-menu a:hover .hov,.header-menu .active .hov{
+	height: 0;
 }
 .slider-box,.slide-list{
 	position: relative;
