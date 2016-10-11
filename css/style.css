@@ -298,11 +298,11 @@ body{
 	-o-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	-webkit-perspective: 1000px;
-	-moz-perspective: 1000px;
-	-o-perspective: 1000px;
-	-ms-perspective: 1000px;
-	perspective: 1000px;
+	-webkit-perspective: 2000px;
+	-moz-perspective: 2000px;
+	-o-perspective: 2000px;
+	-ms-perspective: 2000px;
+	perspective: 2000px;
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
 	-ms-transition: all .5s ease;
@@ -572,7 +572,7 @@ a:nth-of-type(3n+3) .img-ani{
 	background-color: rgba(255,255,255,0.96);
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.header-color-fixed li a{
+.header-color-fixed li .hov{
 	color: #333;
 }
 .case-page-box{
