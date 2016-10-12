@@ -471,12 +471,14 @@
 							'overflow-y': 'hidden',
 							'border-right': srollbarWidth+'px solid transparent'
 						});
+						$(".to-top:visible").css('margin-right',srollbarWidth+'px');
 					},
 					cancel: function() {
 						$("body").css({
 							'overflow-y': 'auto',
 							'border-right': 'none'
 						});
+						$(".to-top:visible").css('margin-right',0);
 					}
 				});
 			})			

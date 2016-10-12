@@ -390,14 +390,14 @@
 							'overflow-y': 'hidden',
 							'border-right': srollbarWidth+'px solid transparent'
 						});
-						$(".to-top").css('margin-right',srollbarWidth+'px');
+						$(".to-top:visible").css('margin-right',srollbarWidth+'px');
 					},
 					cancel: function() {
 						$("body").css({
 							'overflow-y': 'auto',
 							'border-right': 'none'
 						});
-						$(".to-top").css('margin-right',0);
+						$(".to-top:visible").css('margin-right',0);
 					}
 				});  
 			});
