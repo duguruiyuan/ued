@@ -63,7 +63,10 @@ body{
 }
 
 @font-face {font-family: 'SiYuan-ExtraLig648e3bdfc169e4';src: url('../fonts/siyuan/57f8c330f629da0c084594b1.gif');src: url('../fonts/siyuan/57f8c330f629da0c084594b1.gif?#iefix') format('embedded-opentype'),     url('../fonts/siyuan/57f8c330f629da0c084594b1.bmp') format('woff'),     url('../fonts/siyuan/57f8c330f629da0c084594b1.jpg') format('truetype'),     url('../fonts/siyuan/57f8c330f629da0c084594b1.png#SiYuan-ExtraLight') format('svg');   }.css648e3bdfc169e4{font-family: 'SiYuan-ExtraLig648e3bdfc169e4';}
-                    
+  
+  .small{
+  	font-size: 12px;
+  }                  
 /*==================home===================*/
 .g-header{
 	position: fixed;
