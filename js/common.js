@@ -150,7 +150,7 @@ $(function() {
 				if(ids.indexOf(postID.toString()) !== -1) {
 					layer.msg('',{
 						skin: 'layer-green',//自定义layer Ui
-						content:'<i class="iconfont" style="margin-right:5px;font-size:24px;font-weight:normal;">&#xe60d;</i> 你已经赞过了',
+						content:'<i class="iconfont" style="margin-right:5px;font-size:24px;display:inline-block;vertical-align:-3px;">&#xe60b;</i> 你已经赞过了',
 					});
 					return false;
 				}

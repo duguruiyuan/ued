@@ -46,12 +46,13 @@ body{
 }
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1474970540_1562958.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1474970540_1562958.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1474970540_1562958.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1474970540_1562958.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1474970540_1562958.svg#iconfont') format('svg'); /* iOS 4.1- */
-}                                    
+  src: url('//at.alicdn.com/t/font_1476246670_3364007.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1476246670_3364007.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1476246670_3364007.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1476246670_3364007.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1476246670_3364007.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+                                                       
 .iconfont {
   font-family:"iconfont" !important;
   font-size:14px;
@@ -498,16 +499,16 @@ a:nth-of-type(3n+3) .img-ani{
 .footer-logos{background:url(../img/footer-logos.png) no-repeat ;display: inline-block;margin-left: 45px;margin-bottom: 30px;}
 .logo5{width: 90px;height:24px;background-position:24px 0;}
 .logo2{width: 90px;height:25px;background-position:22px -36px;}
-.logo3{width: 60px;height:18px;background-position:0 -73px;}
-.logo6{width: 60px;height:13px;background-position:0 -101px;}
+.logo3{width: 60px;height:23px;background-position:0 -73px;}
+.logo6{width: 60px;height:19px;background-position:0 -101px;}
 .logo4{width: 90px;height:16px;background-position:0 -130px;}
 .logo1{width: 90px;height:25px;background-position:0 -164px;}
-.logo5:hover{height:24px;background-position:24px -196px;}
-.logo2:hover{height:25px;background-position:22px -228px;}
-.logo3:hover{height:18px;background-position:0 -262px;}
-.logo6:hover{height:13px;background-position:0 -295px;}
-.logo4:hover{height:16px;background-position:0 -323px;}
-.logo1:hover{height:25px;background-position:0 -352px;}
+.logo5:hover{background-position:24px -196px;}
+.logo2:hover{background-position:22px -228px;}
+.logo3:hover{background-position:0 -262px;}
+.logo6:hover{background-position:0 -295px;}
+.logo4:hover{background-position:0 -323px;}
+.logo1:hover{background-position:0 -352px;}
 
 .friend-link-title{
 	font-size: 16px;
@@ -554,6 +555,7 @@ a:nth-of-type(3n+3) .img-ani{
 }
 #show-weixin .iconfont{
 	display: inline-block;
+	font-size: 16px;
 }
 .wx-box img{
 	width: 100px;
@@ -692,10 +694,10 @@ a:nth-of-type(3n+3) .img-ani{
 .related-case-list li:hover{
 	color: #14C6D0;
 }
-.section-right .wx-box{
+.section-right .right-wx-box{
 	padding-top: 52px;
 }
-.section-right .wx-box img{
+.section-right .right-wx-box img{
 	width: 190px;
 	margin-left: -10px;
 }
@@ -744,10 +746,11 @@ a:nth-of-type(3n+3) .img-ani{
 	height: 850px;
 }
 .service-banner-box h1{
-	padding-top: 200px;
+	padding-top: 190px;
 	text-align: center;
 	color: #fff;
 	font-size: 70px;
+	line-height: 90px;
 }
 .service-banner-box p{
 	text-align: center;
@@ -1201,7 +1204,6 @@ a:hover .s-company{
 	display: inline-block;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
-	font-size: 12px;
 	vertical-align: 2px;
 }
 .join-link:hover i,.more-case:hover .iconfont{
@@ -1438,20 +1440,20 @@ a:hover .s-company{
 	width: 180px;
 	height: 44px;
 	text-align: center;
-	line-height: 44px;
-	color: #14C6D0;
+	line-height: 42px;
+	color: #666;
 	font-size: 16px;
-	border: 2px solid #14C6D0;
+	border: 1px solid #fafafa;
+	background-color: #fff;
 	margin: 0 10px;
-	opacity: 0.6;
+
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.activity-menu li:hover{
-	box-shadow: 0 0 0 2px #14C6D0 inset;
-}
-.activity-menu .active{	
-	opacity: 1;
+.activity-menu li:hover,.activity-menu .active{	
+
+	border-color: #14C6D0;
+	color: #14C6D0;
 }
 
 .opinion-list{
@@ -1692,14 +1694,13 @@ a:hover .s-company{
  * custom layer ui
  */
 .layer-green{
-	border: 2px solid #19c7d1!important;
+	border: 1px solid #19c7d1!important;
 	border-radius: 7px!important;
 	color: #19c7d1;
 
 }
 .layer-green.layui-layer-dialog .layui-layer-content{
 	font-size: 16px;
-	font-weight: bold;
 	line-height: 24px;
 }
 

@@ -31,7 +31,7 @@
 				</a>
 				<ul class="fr header-menu">
 					<li><a href="cases.html"><span class="act">案例</span><span class="hov">案例</span></a></li>
-					<li><a href="service.html"><span class="act">服务</span><span class="hov">服务</span></a></li>
+					<li><a href="service.html" class="active"><span class="act">服务</span><span class="hov">服务</span></a></li>
 					<li><a href="about.html"><span class="act">关于</span><span class="hov">关于</span></a></li>
 					<li><a href="activity.html"><span class="act">动态</span><span class="hov">动态</span></a></li>
 				</ul>
@@ -436,11 +436,21 @@
 	<script type="text/javascript">
 		$(function() {
 			//轮播
+			var currentIndex = 1;
 			$('.service-banner-nav li').hover(function() {
 				var index = $('.service-banner-nav li').removeClass("active").index(this);
+				currentIndex = index;
 				$(this).addClass("active");
 				$(".service-banner-list li").removeClass("active").eq(index).addClass("active");
 			});
+			
+			
+			var timer = setInterval(function(){
+				var slideSize =  $('.service-banner-nav li').length;
+				$('.service-banner-nav li').eq(currentIndex % slideSize).trigger("mouseover");
+				currentIndex += 1;
+			},3000);
+			
 
 			//合作咨询表单
 			$(".contact-btn").click(function() {
