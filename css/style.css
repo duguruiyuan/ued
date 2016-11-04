@@ -278,10 +278,13 @@ body{
 	padding: 40px 0;
 	min-width: 1180px;
 }
-.case-box .case,.case-box .case img{
+.case-box .case,.case-box .case .case-img{
 	width: 380px;
 	height: 260px;
 	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .case-list{
 	margin-top: 30px;
@@ -354,7 +357,7 @@ a:nth-of-type(3n+3) .img-ani{
 	transition-delay: 0.5s;
 	margin-right: 0;
 }
-.case img{
+.case img,.case .case-img{
 	width: 380px;
 	height: 260px;
 	-webkit-transition: all 0.5s cubic-bezier(0.800, -0.005, 0.220, 1.005);
@@ -599,13 +602,18 @@ a:nth-of-type(3n+3) .img-ani{
 	color: #14C6D0;
 	border-bottom: 1px solid #14C6D0;
 }
-.case-page-box .case img{
+.case-page-box .case .case-img{
 	width: 330px;
 	height: 190px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 }
 .case-page-box .case img:hover{
 	box-shadow: 0 5px 10px rgba(0,0,0,.3);
+	-webkit-transform: translateY(-3px);
 	transform: translateY(-3px);
 }
 .case-page-box .case{
