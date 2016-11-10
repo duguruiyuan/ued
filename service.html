@@ -356,12 +356,12 @@
 				<i class="contact-close-btn iconfont">&#xe604;</i>
 				<form action="" method="post" class="contact-form">
 					<h4 class="form-title">合作咨询</h4>
-					<p class="form-sub-title">一次咨询或许正是成就一个出色产品的开端</p>
+					<p class="form-sub-title">一次咨询或许正是成就一个出色产品的开端</p>				
 					<input type="text" class="contact-form-input" name="name" id="name" maxlength="10" placeholder="您的姓名" required/><!--不要改这个注释的位置,否则会换行
 					--><input type="tel" class="contact-form-input" name="phone" id="phone" maxlength="11" placeholder="手机号码" required/>
 					<input type="text" name="company" id="company" value="" class="contact-form-input" style="width:680px ;" maxlength="30" placeholder="公司名称" maxlength="200" required/>
 					<textarea name="consultContent" id="consultContent" class="contact-form-texteara" rows="" cols="" placeholder="请填写您的咨询内容" maxlength="300" required></textarea>
-					<input type="submit" class="contact-form-subbtn" value="提交" />
+					<input type="submit" class="contact-form-subbtn" value="提交"/>
 				</form>
 				<div class="form-bottom-info">
 					或发邮件至
@@ -432,6 +432,9 @@
 		</div>
 	</body>
 	<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="js/nice-validator/jquery.validator.css">
+<script type="text/javascript" src="js/nice-validator/jquery.validator.min.js"></script>
+<script type="text/javascript" src="js/nice-validator/local/zh-CN.js"></script>
 	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
@@ -472,6 +475,20 @@
 							'border-right': srollbarWidth+'px solid transparent'
 						});
 						$(".to-top:visible").css('margin-right',srollbarWidth+'px');
+					
+						//表单验证,文档地址https://niceue.com/validator/#plugin_config
+						currentLayer.find('.contact-form').validator({
+						    stopOnError: false,//验证出错时停止继续验证，默认不停止
+						    timely: true,//是否启用实时验证
+						    msgStyle: "top:-14px;left:14px;",
+						    msgClass: "n-bottom",  //消息将自动显示在输入框下边
+						    fields: {
+						        'name': '姓名:required;',
+						        'phone': '手机号:required;mobile',
+						        'company': '公司名称:required;',
+						        'consultContent': '咨询内容:required;'
+						    }
+						});
 					},
 					cancel: function() {
 						$("body").css({

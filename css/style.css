@@ -597,6 +597,7 @@ a:nth-of-type(3n+3) .img-ani{
 	text-align: center;
 	color: #333;
 	margin-bottom: -1px;
+	margin-right: 20px;
 }
 .case-menu li:hover,.case-menu .active{
 	color: #14C6D0;
@@ -1400,7 +1401,7 @@ a:hover .s-company{
 	box-shadow: 0 0 5px #14C6D0;
 }
 .contact-form-subbtn{
-	display: block;
+	display: block!important;
 	width: 280px;
 	height: 44px;
 	line-height: 44px;

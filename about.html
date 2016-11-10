@@ -330,6 +330,9 @@
 		</div>
 	</body>
 	<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="js/nice-validator/jquery.validator.css">
+<script type="text/javascript" src="js/nice-validator/jquery.validator.min.js"></script>
+<script type="text/javascript" src="js/nice-validator/local/zh-CN.js"></script>
 	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
@@ -391,6 +394,20 @@
 							'border-right': srollbarWidth+'px solid transparent'
 						});
 						$(".to-top:visible").css('margin-right',srollbarWidth+'px');
+						
+						//表单验证,文档地址https://niceue.com/validator/#plugin_config
+						currentLayer.find('.contact-form').validator({
+						    stopOnError: false,//验证出错时停止继续验证，默认不停止
+						    timely: true,//是否启用实时验证
+						    msgStyle: "top:-14px;left:14px;",
+						    msgClass: "n-bottom",  //消息将自动显示在输入框下边
+						    fields: {
+						        'name': '姓名:required;',
+						        'phone': '手机号:required;mobile',
+						        'company': '公司名称:required;',
+						        'consultContent': '咨询内容:required;'
+						    }
+						});
 					},
 					cancel: function() {
 						$("body").css({
