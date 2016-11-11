@@ -397,9 +397,9 @@ a:nth-of-type(3n+3) .img-ani{
 	font-size: 16px;
 	font-weight: bold;
 	background-color: #fff;
+	background-color: rgba(255,255,255,.5);
 	color: #14C6D0;
 	cursor: pointer;
-	opacity: 0.5;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
@@ -410,7 +410,7 @@ a:nth-of-type(3n+3) .img-ani{
 	transition: all 0.3s;
 }
 .more-case:hover{
-	opacity: 1;
+	background-color: #fff;
 }
 .company-list{
 	margin: 90px 0;
